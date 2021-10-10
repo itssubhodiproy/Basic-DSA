@@ -14,7 +14,7 @@ int main(){
     int maxArea = 0;
         // int length = sizeof(heights)/sizeof(heights[0]);
         for (int i = 0; i < n; i++) {
-            int minHeight = INT64_MAX;
+            int minHeight = INT_MAX;
             for (int j = i; j < n ;j++) {
                 minHeight =min(minHeight, heights[j]);
                 maxArea = max(maxArea, minHeight * (j - i + 1));
