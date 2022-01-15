@@ -19,7 +19,7 @@ int main(){
                 minHeight =min(minHeight, heights[j]);
                 maxArea = max(maxArea, minHeight * (j - i + 1));
             }
-        }
+      }
     cout<<maxArea<<endl;
     return 0;
 }
